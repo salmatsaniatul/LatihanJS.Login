@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looping</title>
+    <link rel="stylesheet" href="styless.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Teenagers Team</h3>
+      <ul id="Kita">
+        <li></li>
+      </ul>
+    </div>
+    <script type="text">
+      let teenagers = ["Mardiyani", "Felisha", "Sabila", "Triani", "Jamilah", "Tsani"];
+      let tampil = teenagers.length;
+
+      let text = "";
+      for (let a = 0; a < tampil; a++) {
+        text += "<li>" + teenagers[a] + "</li>";
+      }
+
+      document.getElementById("Kita").innerHTML = text;
+    </script>
+  </body>
+</html>
